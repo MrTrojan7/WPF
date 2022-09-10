@@ -24,10 +24,9 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void ButtonContainers_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Clicked");
+            new ContainersWindow().ShowDialog();
         }
     }
 }
@@ -61,6 +60,16 @@ namespace WpfApp1
 * Header
 * Left Content Right
 * Footer
-* 
 * (+ BackgroundColor)
+* 
+* 
+* <UniformGrid Rows="3" Columns="3"> - простой контейнер с ячейками одинакового размера.
+* Каждый дочерний элемент автоматически помещается в новую ячейку
+* 
+* <Grid> - наиболее универсальный контейнер
+* каждая ячейка собирается отдельно, дочерние элементы
+* должны быть явно указаны к какой ячейке они относятся. Иначе
+* все они попадают в одну ячейку и перекрывают друг друга
+* 
+* 
 */

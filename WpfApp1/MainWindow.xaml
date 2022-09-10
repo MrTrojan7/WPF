@@ -5,74 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="750" Width="800">
-    <StackPanel Orientation="Horizontal">
-        <Button Click="Button_Click">
-            Press Me1
-        </Button>
-        <StackPanel Orientation="Vertical">
-            <Button>
-                Press_Me3
-            </Button>
-            <Label 
-                Background="Green"
-                Content="Вертикальная панель"
-                Foreground="Yellow" />
-            <Border
-                BorderBrush="Salmon"
-                BorderThickness="2"
-                Margin="15">
-                <StackPanel>
-                    <Label
-                        Background="Maroon"
-                        Foreground="Violet"  />
-                    <Button Content="Press_Me_in_stackPanel1" />
-                    <Button Content="Press_Me_in_stackPanel2" />
-                </StackPanel>
-                
-            </Border>
-            <Border
-                BorderBrush="Lime"
-                BorderThickness="2">
-                <!-- Важен порядок: верх, низ, слева, справа, центр-->
-                <DockPanel Height="150">
-                    
-                    <Label
-                        Background="LightPink"
-                        Content="Header"
-                        DockPanel.Dock="Top" 
-                        HorizontalContentAlignment="Center"
-                        FontSize="20"/>
-                    <Label
-                        Background="LightPink"
-                        Content="Bottom2"
-                        DockPanel.Dock="Bottom"
-                        HorizontalContentAlignment="Center"/>
-                    <Label
-                        Background="Aquamarine"
-                        Content="Left"
-                        DockPanel.Dock="Left"
-                        VerticalContentAlignment="Center"/>
-                    <Label
-                        Background="Bisque"
-                        Content="Right"
-                        DockPanel.Dock="Right"
-                        VerticalContentAlignment="Center"/>
-                    <Label
-                        Background="Blue"
-                        Content="Top"
-                        DockPanel.Dock="Top"
-                        HorizontalContentAlignment="Center"
-                        VerticalContentAlignment="Center"/>
-                    
-                    
-                </DockPanel>
-            </Border>
-                <Button>
-                Press_Me4
-            </Button>
-            
-        </StackPanel>
-        <Button Content="Press_Me" />
+        Title="MainWindow" Height="650" Width="800" Background="Beige">
+    <StackPanel>
+        <Label 
+            Content="Основы WPF" 
+            FontSize="20"
+            FontWeight="Bold"
+            HorizontalContentAlignment="Center"/>
+        <Button 
+            Click="ButtonContainers_Click"
+            Content="1. Контейнеры" 
+            FontSize="18"
+            HorizontalAlignment="Left"
+            Margin="20,10"
+            Padding="10,5"/>
+        
     </StackPanel>
 </Window>
