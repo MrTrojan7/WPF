@@ -19,6 +19,13 @@
             HorizontalAlignment="Left"
             Margin="20,10"
             Padding="10,5"/>
+        <Button 
+            Click="ButtonMines_Click"
+            Content="1. Взаимодействия" 
+            FontSize="18"
+            HorizontalAlignment="Left"
+            Margin="20,10"
+            Padding="10,5"/>
         
     </StackPanel>
 </Window>

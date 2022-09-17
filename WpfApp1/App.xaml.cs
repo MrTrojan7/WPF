@@ -13,5 +13,7 @@ namespace WpfApp1
     /// </summary>
     public partial class App : Application
     {
+        public const int FIELD_SIZE_X = 8; // размер поля по горизонтали
+        public const int FIELD_SIZE_Y = 6; // размер поля по вертикали
     }
 }
